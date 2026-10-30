@@ -1,0 +1,222 @@
+{
+  "schema_version": "1.0",
+
+  "enums": {
+    "modality": ["required", "preferred", "unspecified"],
+    "remote_mode": ["onsite", "hybrid", "remote", "any"],
+    "job_type": ["internship", "junior", "other"],
+    "education_level": ["high_school", "bsc", "msc", "phd"],
+    "education_status": ["enrolled", "graduated", "dropped_out"],
+    "language_level": ["A1", "A2", "B1", "B2", "C1", "C2", "native"],
+    "mapping_status": ["EXACT", "RELATED", "UNMAPPED"],
+    "mapping_method": ["alias_lookup", "exact_lookup", "fuzzy_match", "embedding_similarity", "none"],
+    "constraint_status": ["PASS", "FAIL", "UNKNOWN", "NOT_APPLICABLE"]
+  },
+
+  "Evidence": {
+    "_used_in": "every extracted item, by Group 1",
+    "text": "Developed machine-learning models in Python",
+    "source_field": "cv_text",
+    "char_start": 412,
+    "char_end": 455
+  },
+
+  "CandidateProfile": {
+    "_produced_by": "Group 1",
+    "_consumed_by": "Group 2",
+    "schema_version": "1.0",
+    "candidate_id": "cand_017",
+    "source": { "type": "cv", "raw_text": "..." },
+    "student_status": {
+      "is_student": true,
+      "evidence": { "text": "MSc student, FER Zagreb (expected 2027)", "source_field": "cv_text", "char_start": 30, "char_end": 69 }
+    },
+    "education": [
+      {
+        "level": "msc",
+        "field": "Computer Science",
+        "institution": "FER Zagreb",
+        "status": "enrolled",
+        "expected_graduation": "2027-07",
+        "evidence": { "text": "MSc student, FER Zagreb (expected 2027)", "source_field": "cv_text", "char_start": 30, "char_end": 69 }
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "evidence": { "text": "Developed machine-learning models in Python", "source_field": "cv_text", "char_start": 412, "char_end": 455 }
+      },
+      {
+        "name": "FastAPI",
+        "evidence": { "text": "built REST APIs using FastAPI", "source_field": "cv_text", "char_start": 470, "char_end": 499 }
+      }
+    ],
+    "experience": [
+      {
+        "title": "ML research assistant",
+        "organization": "University lab",
+        "months": 12,
+        "description": "Developed machine-learning models for biomedical time series",
+        "evidence": { "text": "Research assistant (2025-2026): ...", "source_field": "cv_text", "char_start": 380, "char_end": 520 }
+      }
+    ],
+    "languages": [
+      {
+        "language": "English",
+        "level": "C1",
+        "evidence": { "text": "English (C1)", "source_field": "cv_text", "char_start": 900, "char_end": 912 }
+      }
+    ],
+    "preferences": {
+      "target_roles": ["machine learning engineer", "data scientist"],
+      "interests": ["machine learning", "data science"],
+      "locations": ["Zagreb"],
+      "remote_mode": "hybrid",
+      "job_types": ["internship", "junior"]
+    }
+  },
+
+  "JobProfile": {
+    "_produced_by": "Group 1",
+    "_consumed_by": "Group 2",
+    "_rule": "Every requirement carries value + modality + evidence.",
+    "schema_version": "1.0",
+    "job_id": "job_284",
+    "source": { "dataset": "synthetic", "raw_text": "..." },
+    "title": "Machine Learning Intern",
+    "occupation": "Machine Learning Intern",
+    "company": "Acme d.o.o.",
+    "job_type": "internship",
+    "location": { "city": "Zagreb", "country": "HR" },
+    "remote_mode": { "value": "hybrid", "modality": "required", "evidence": { "text": "Hybrid, 2 days in office", "source_field": "job_text", "char_start": 120, "char_end": 144 } },
+    "skills": [
+      { "name": "Python", "modality": "required", "evidence": { "text": "Strong Python skills", "source_field": "job_text", "char_start": 300, "char_end": 320 } },
+      { "name": "SQL", "modality": "required", "evidence": { "text": "Working knowledge of SQL", "source_field": "job_text", "char_start": 322, "char_end": 346 } },
+      { "name": "Docker", "modality": "preferred", "evidence": { "text": "Experience with Docker is considered an advantage.", "source_field": "job_text", "char_start": 350, "char_end": 400 } }
+    ],
+    "education": { "level": "msc", "field": "Computer Science", "modality": "required", "evidence": { "text": "Current MSc student in CS or related", "source_field": "job_text", "char_start": 200, "char_end": 236 } },
+    "student_status_required": { "value": true, "modality": "required", "evidence": { "text": "Current MSc student in CS or related", "source_field": "job_text", "char_start": 200, "char_end": 236 } },
+    "experience": { "min_years": 2, "modality": "preferred", "evidence": { "text": "2 years of experience is a plus", "source_field": "job_text", "char_start": 240, "char_end": 271 } },
+    "languages": [
+      { "language": "English", "level": "B2", "modality": "required", "evidence": { "text": "Fluent English (B2+)", "source_field": "job_text", "char_start": 410, "char_end": 430 } }
+    ]
+  },
+
+  "NormalizedSkill": {
+    "_produced_by": "Group 2",
+    "_note": "Original term is always kept. esco_concept is null when status is UNMAPPED.",
+    "source_term": "FastAPI",
+    "normalized_label": "FastAPI",
+    "esco_concept": { "uri": "http://data.europa.eu/esco/skill/...", "preferred_label": "web programming" },
+    "mapping": { "status": "RELATED", "method": "embedding_similarity", "confidence": 0.81 },
+    "modality": "unspecified",
+    "evidence": { "text": "built REST APIs using FastAPI", "source_field": "cv_text", "char_start": 470, "char_end": 499 }
+  },
+
+  "NormalizedProfile": {
+    "_produced_by": "Group 2",
+    "_consumed_by": "Groups 3 and 4",
+    "_rule": "The original CandidateProfile or JobProfile stays untouched under 'profile'. Group 2 only adds 'normalized'.",
+    "schema_version": "1.0",
+    "entity_type": "candidate",
+    "entity_id": "cand_017",
+    "profile": "<the full CandidateProfile or JobProfile, unchanged>",
+    "normalized": {
+      "skills": [
+        {
+          "source_term": "Python",
+          "normalized_label": "Python",
+          "esco_concept": { "uri": "http://data.europa.eu/esco/skill/...", "preferred_label": "Python (computer programming)" },
+          "mapping": { "status": "EXACT", "method": "alias_lookup", "confidence": 1.0 },
+          "modality": "unspecified",
+          "evidence": { "text": "Developed machine-learning models in Python", "source_field": "cv_text", "char_start": 412, "char_end": 455 }
+        }
+      ],
+      "occupations": [
+        {
+          "source_term": "machine learning engineer",
+          "normalized_label": "machine learning engineer",
+          "esco_concept": { "uri": "http://data.europa.eu/esco/occupation/...", "preferred_label": "data scientist" },
+          "mapping": { "status": "RELATED", "method": "embedding_similarity", "confidence": 0.77 }
+        }
+      ]
+    }
+  },
+
+  "RetrievalDocument": {
+    "_produced_by": "Group 3",
+    "entity_type": "job",
+    "entity_id": "job_284",
+    "retrieval_text": "Role: Machine Learning Intern.\nSkills: Python, SQL, Docker.\nEducation: MSc Computer Science.\nLocation: Zagreb, hybrid.",
+    "encoder_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "embedding_dim": 384
+  },
+
+  "RetrievalResult": {
+    "_produced_by": "Group 3",
+    "_consumed_by": "Group 4",
+    "schema_version": "1.0",
+    "candidate_id": "cand_017",
+    "encoder_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "k": 50,
+    "results": [
+      { "job_id": "job_284", "semantic_similarity": 0.87, "retrieval_rank": 1 },
+      { "job_id": "job_102", "semantic_similarity": 0.84, "retrieval_rank": 2 }
+    ]
+  },
+
+  "MatchResult": {
+    "_produced_by": "Group 4",
+    "schema_version": "1.0",
+    "candidate_id": "cand_017",
+    "job_id": "job_284",
+    "features": {
+      "semantic_similarity": 0.87,
+      "required_skill_coverage": 1.0,
+      "preferred_skill_coverage": 0.0,
+      "number_missing_required_skills": 0,
+      "number_missing_preferred_skills": 1,
+      "missing_required_skills": [],
+      "missing_preferred_skills": ["Docker"],
+      "esco_occupation_similarity": 0.91,
+      "education_match": 1,
+      "seniority_match": 1,
+      "experience_gap": 1,
+      "language_match": 1,
+      "location_match": 1,
+      "remote_preference_match": 1
+    },
+    "match_score": 0.84,
+    "score_weights_version": "w_v1",
+    "constraints": {
+      "overall_status": "PASS",
+      "checks": [
+        { "constraint": "required_skills", "status": "PASS", "required": true, "value": { "missing_required_skills": [] } },
+        { "constraint": "student_status", "status": "PASS", "required": true, "value": { "is_student": true } },
+        { "constraint": "education", "status": "PASS", "required": true, "value": { "education_match": 1 } },
+        { "constraint": "experience", "status": "NOT_APPLICABLE", "required": false, "value": { "experience_gap": 1 } },
+        { "constraint": "language", "status": "PASS", "required": true, "value": { "language_match": 1 } },
+        { "constraint": "remote_mode", "status": "PASS", "required": true, "value": { "remote_preference_match": 1 } }
+      ]
+    },
+    "eligible": true,
+    "explanation": {
+      "language": "hr",
+      "llm_model": "qwen3:4b-instruct",
+      "text": "Tvoj profil dobro odgovara traženim kompetencijama iz Pythona i SQL-a. Glavni nedostatak je Docker, koji je poželjan, ali nije obavezan."
+    }
+  },
+
+  "RecommendationResponse": {
+    "_produced_by": "Group 4 (final pipeline output)",
+    "schema_version": "1.0",
+    "candidate_id": "cand_017",
+    "generated_at": "2026-10-27T13:30:00+01:00",
+    "recommendations": [
+      { "final_rank": 1, "match": "<MatchResult with eligible = true>" }
+    ],
+    "excluded": [
+      { "job_id": "job_102", "reason": "constraint FAIL: language (German B2 required)", "match": "<MatchResult with eligible = false>" }
+    ]
+  }
+}
