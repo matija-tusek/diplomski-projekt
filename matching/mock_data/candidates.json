@@ -1,0 +1,734 @@
+[
+  {
+    "schema_version": "1.0",
+    "entity_type": "candidate",
+    "entity_id": "cand_001",
+    "profile": {
+      "schema_version": "1.0",
+      "candidate_id": "cand_001",
+      "source": {
+        "type": "cv",
+        "raw_text": "Curriculum Vitae\nMSc student, FER Zagreb (expected 2027)\nDeveloped machine-learning models in Python\nBuilt REST APIs using FastAPI\nWrote SQL queries for biomedical datasets\nTrained neural networks in PyTorch\nResearch assistant (2025-2026): ML models for biomedical time series\nEnglish (C1)\nCroatian (native)"
+      },
+      "student_status": {
+        "is_student": true,
+        "evidence": {
+          "text": "MSc student, FER Zagreb (expected 2027)",
+          "source_field": "cv_text",
+          "char_start": 17,
+          "char_end": 56
+        }
+      },
+      "education": [
+        {
+          "level": "msc",
+          "field": "Computer Science",
+          "institution": "FER Zagreb",
+          "status": "enrolled",
+          "expected_graduation": "2027-07",
+          "evidence": {
+            "text": "MSc student, FER Zagreb (expected 2027)",
+            "source_field": "cv_text",
+            "char_start": 17,
+            "char_end": 56
+          }
+        }
+      ],
+      "skills": [
+        {
+          "name": "Python",
+          "evidence": {
+            "text": "Developed machine-learning models in Python",
+            "source_field": "cv_text",
+            "char_start": 57,
+            "char_end": 100
+          }
+        },
+        {
+          "name": "FastAPI",
+          "evidence": {
+            "text": "Built REST APIs using FastAPI",
+            "source_field": "cv_text",
+            "char_start": 101,
+            "char_end": 130
+          }
+        },
+        {
+          "name": "SQL",
+          "evidence": {
+            "text": "Wrote SQL queries for biomedical datasets",
+            "source_field": "cv_text",
+            "char_start": 131,
+            "char_end": 172
+          }
+        },
+        {
+          "name": "PyTorch",
+          "evidence": {
+            "text": "Trained neural networks in PyTorch",
+            "source_field": "cv_text",
+            "char_start": 173,
+            "char_end": 207
+          }
+        }
+      ],
+      "experience": [
+        {
+          "title": "ML research assistant",
+          "organization": "University lab",
+          "months": 12,
+          "description": "Developed machine-learning models for biomedical time series",
+          "evidence": {
+            "text": "Research assistant (2025-2026): ML models for biomedical time series",
+            "source_field": "cv_text",
+            "char_start": 208,
+            "char_end": 276
+          }
+        }
+      ],
+      "languages": [
+        {
+          "language": "English",
+          "level": "C1",
+          "evidence": {
+            "text": "English (C1)",
+            "source_field": "cv_text",
+            "char_start": 277,
+            "char_end": 289
+          }
+        },
+        {
+          "language": "Croatian",
+          "level": "native",
+          "evidence": {
+            "text": "Croatian (native)",
+            "source_field": "cv_text",
+            "char_start": 290,
+            "char_end": 307
+          }
+        }
+      ],
+      "preferences": {
+        "target_roles": [
+          "machine learning engineer",
+          "data scientist"
+        ],
+        "interests": [
+          "machine learning",
+          "data science"
+        ],
+        "locations": [
+          "Zagreb"
+        ],
+        "remote_mode": "hybrid",
+        "job_types": [
+          "internship",
+          "junior"
+        ]
+      }
+    },
+    "normalized": {
+      "skills": [
+        {
+          "source_term": "Python",
+          "normalized_label": "Python",
+          "esco_concept": {
+            "uri": "http://data.europa.eu/esco/skill/mock-python-computer-programming",
+            "preferred_label": "Python (computer programming)"
+          },
+          "mapping": {
+            "status": "EXACT",
+            "method": "alias_lookup",
+            "confidence": 1.0
+          },
+          "modality": "unspecified",
+          "evidence": {
+            "text": "Developed machine-learning models in Python",
+            "source_field": "cv_text",
+            "char_start": 57,
+            "char_end": 100
+          }
+        },
+        {
+          "source_term": "FastAPI",
+          "normalized_label": "FastAPI",
+          "esco_concept": {
+            "uri": "http://data.europa.eu/esco/skill/mock-web-programming",
+            "preferred_label": "web programming"
+          },
+          "mapping": {
+            "status": "RELATED",
+            "method": "embedding_similarity",
+            "confidence": 0.81
+          },
+          "modality": "unspecified",
+          "evidence": {
+            "text": "Built REST APIs using FastAPI",
+            "source_field": "cv_text",
+            "char_start": 101,
+            "char_end": 130
+          }
+        },
+        {
+          "source_term": "SQL",
+          "normalized_label": "SQL",
+          "esco_concept": {
+            "uri": "http://data.europa.eu/esco/skill/mock-sql",
+            "preferred_label": "SQL"
+          },
+          "mapping": {
+            "status": "EXACT",
+            "method": "exact_lookup",
+            "confidence": 1.0
+          },
+          "modality": "unspecified",
+          "evidence": {
+            "text": "Wrote SQL queries for biomedical datasets",
+            "source_field": "cv_text",
+            "char_start": 131,
+            "char_end": 172
+          }
+        },
+        {
+          "source_term": "PyTorch",
+          "normalized_label": "PyTorch",
+          "esco_concept": {
+            "uri": "http://data.europa.eu/esco/skill/mock-machine-learning",
+            "preferred_label": "machine learning"
+          },
+          "mapping": {
+            "status": "RELATED",
+            "method": "embedding_similarity",
+            "confidence": 0.78
+          },
+          "modality": "unspecified",
+          "evidence": {
+            "text": "Trained neural networks in PyTorch",
+            "source_field": "cv_text",
+            "char_start": 173,
+            "char_end": 207
+          }
+        }
+      ],
+      "occupations": [
+        {
+          "source_term": "machine learning engineer",
+          "normalized_label": "data scientist",
+          "esco_concept": {
+            "uri": "http://data.europa.eu/esco/occupation/mock-data-scientist",
+            "preferred_label": "data scientist"
+          },
+          "mapping": {
+            "status": "RELATED",
+            "method": "embedding_similarity",
+            "confidence": 0.77
+          },
+          "modality": null,
+          "evidence": null
+        },
+        {
+          "source_term": "data scientist",
+          "normalized_label": "data scientist",
+          "esco_concept": {
+            "uri": "http://data.europa.eu/esco/occupation/mock-data-scientist",
+            "preferred_label": "data scientist"
+          },
+          "mapping": {
+            "status": "EXACT",
+            "method": "exact_lookup",
+            "confidence": 1.0
+          },
+          "modality": null,
+          "evidence": null
+        }
+      ]
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "entity_type": "candidate",
+    "entity_id": "cand_002",
+    "profile": {
+      "schema_version": "1.0",
+      "candidate_id": "cand_002",
+      "source": {
+        "type": "cv",
+        "raw_text": "Curriculum Vitae\nGraduated 2024, no longer a student\nBSc Computer Science, University of Split (2024)\nBuilt single-page apps in JavaScript\nReact front-end development\nREST backend with Node.js\nPostgreSQL and SQL queries\nDockerised deployments\nJunior web developer at Agency d.o.o. (2022-2024)\nEnglish (B2)\nCroatian (native)"
+      },
+      "student_status": {
+        "is_student": false,
+        "evidence": {
+          "text": "Graduated 2024, no longer a student",
+          "source_field": "cv_text",
+          "char_start": 17,
+          "char_end": 52
+        }
+      },
+      "education": [
+        {
+          "level": "bsc",
+          "field": "Computer Science",
+          "institution": "University of Split",
+          "status": "graduated",
+          "expected_graduation": null,
+          "evidence": {
+            "text": "BSc Computer Science, University of Split (2024)",
+            "source_field": "cv_text",
+            "char_start": 53,
+            "char_end": 101
+          }
+        }
+      ],
+      "skills": [
+        {
+          "name": "JavaScript",
+          "evidence": {
+            "text": "Built single-page apps in JavaScript",
+            "source_field": "cv_text",
+            "char_start": 102,
+            "char_end": 138
+          }
+        },
+        {
+          "name": "React",
+          "evidence": {
+            "text": "React front-end development",
+            "source_field": "cv_text",
+            "char_start": 139,
+            "char_end": 166
+          }
+        },
+        {
+          "name": "Node.js",
+          "evidence": {
+            "text": "REST backend with Node.js",
+            "source_field": "cv_text",
+            "char_start": 167,
+            "char_end": 192
+          }
+        },
+        {
+          "name": "SQL",
+          "evidence": {
+            "text": "PostgreSQL and SQL queries",
+            "source_field": "cv_text",
+            "char_start": 193,
+            "char_end": 219
+          }
+        },
+        {
+          "name": "Docker",
+          "evidence": {
+            "text": "Dockerised deployments",
+            "source_field": "cv_text",
+            "char_start": 220,
+            "char_end": 242
+          }
+        }
+      ],
+      "experience": [
+        {
+          "title": "Junior web developer",
+          "organization": "Agency d.o.o.",
+          "months": 24,
+          "description": "Delivered client web applications",
+          "evidence": {
+            "text": "Junior web developer at Agency d.o.o. (2022-2024)",
+            "source_field": "cv_text",
+            "char_start": 243,
+            "char_end": 292
+          }
+        }
+      ],
+      "languages": [
+        {
+          "language": "English",
+          "level": "B2",
+          "evidence": {
+            "text": "English (B2)",
+            "source_field": "cv_text",
+            "char_start": 293,
+            "char_end": 305
+          }
+        },
+        {
+          "language": "Croatian",
+          "level": "native",
+          "evidence": {
+            "text": "Croatian (native)",
+            "source_field": "cv_text",
+            "char_start": 306,
+            "char_end": 323
+          }
+        }
+      ],
+      "preferences": {
+        "target_roles": [
+          "full-stack developer",
+          "frontend developer"
+        ],
+        "interests": [
+          "web development"
+        ],
+        "locations": [
+          "Zagreb",
+          "Split"
+        ],
+        "remote_mode": "remote",
+        "job_types": [
+          "junior"
+        ]
+      }
+    },
+    "normalized": {
+      "skills": [
+        {
+          "source_term": "JavaScript",
+          "normalized_label": "JavaScript",
+          "esco_concept": {
+            "uri": "http://data.europa.eu/esco/skill/mock-javascript",
+            "preferred_label": "JavaScript"
+          },
+          "mapping": {
+            "status": "EXACT",
+            "method": "exact_lookup",
+            "confidence": 1.0
+          },
+          "modality": "unspecified",
+          "evidence": {
+            "text": "Built single-page apps in JavaScript",
+            "source_field": "cv_text",
+            "char_start": 102,
+            "char_end": 138
+          }
+        },
+        {
+          "source_term": "React",
+          "normalized_label": "React",
+          "esco_concept": {
+            "uri": "http://data.europa.eu/esco/skill/mock-javascript-framework",
+            "preferred_label": "JavaScript framework"
+          },
+          "mapping": {
+            "status": "RELATED",
+            "method": "embedding_similarity",
+            "confidence": 0.74
+          },
+          "modality": "unspecified",
+          "evidence": {
+            "text": "React front-end development",
+            "source_field": "cv_text",
+            "char_start": 139,
+            "char_end": 166
+          }
+        },
+        {
+          "source_term": "Node.js",
+          "normalized_label": "Node.js",
+          "esco_concept": {
+            "uri": "http://data.europa.eu/esco/skill/mock-javascript",
+            "preferred_label": "JavaScript"
+          },
+          "mapping": {
+            "status": "RELATED",
+            "method": "fuzzy_match",
+            "confidence": 0.88
+          },
+          "modality": "unspecified",
+          "evidence": {
+            "text": "REST backend with Node.js",
+            "source_field": "cv_text",
+            "char_start": 167,
+            "char_end": 192
+          }
+        },
+        {
+          "source_term": "SQL",
+          "normalized_label": "SQL",
+          "esco_concept": {
+            "uri": "http://data.europa.eu/esco/skill/mock-sql",
+            "preferred_label": "SQL"
+          },
+          "mapping": {
+            "status": "EXACT",
+            "method": "exact_lookup",
+            "confidence": 1.0
+          },
+          "modality": "unspecified",
+          "evidence": {
+            "text": "PostgreSQL and SQL queries",
+            "source_field": "cv_text",
+            "char_start": 193,
+            "char_end": 219
+          }
+        },
+        {
+          "source_term": "Docker",
+          "normalized_label": "Docker",
+          "esco_concept": {
+            "uri": "http://data.europa.eu/esco/skill/mock-docker",
+            "preferred_label": "Docker"
+          },
+          "mapping": {
+            "status": "EXACT",
+            "method": "alias_lookup",
+            "confidence": 0.98
+          },
+          "modality": "unspecified",
+          "evidence": {
+            "text": "Dockerised deployments",
+            "source_field": "cv_text",
+            "char_start": 220,
+            "char_end": 242
+          }
+        }
+      ],
+      "occupations": [
+        {
+          "source_term": "full-stack developer",
+          "normalized_label": "software developer",
+          "esco_concept": {
+            "uri": "http://data.europa.eu/esco/occupation/mock-software-developer",
+            "preferred_label": "software developer"
+          },
+          "mapping": {
+            "status": "RELATED",
+            "method": "embedding_similarity",
+            "confidence": 0.83
+          },
+          "modality": null,
+          "evidence": null
+        },
+        {
+          "source_term": "frontend developer",
+          "normalized_label": "web developer",
+          "esco_concept": {
+            "uri": "http://data.europa.eu/esco/occupation/mock-web-developer",
+            "preferred_label": "web developer"
+          },
+          "mapping": {
+            "status": "RELATED",
+            "method": "embedding_similarity",
+            "confidence": 0.85
+          },
+          "modality": null,
+          "evidence": null
+        }
+      ]
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "entity_type": "candidate",
+    "entity_id": "cand_003",
+    "profile": {
+      "schema_version": "1.0",
+      "candidate_id": "cand_003",
+      "source": {
+        "type": "cv",
+        "raw_text": "Curriculum Vitae\nBSc Computer Science, University of Rijeka (2027)\nJava projects for university courses\nSpring Boot web service\nPrototype dashboards with Streamlit\nBasic SQL\nEnglish (B1)\nGerman (A2)\nCroatian (native)"
+      },
+      "student_status": {
+        "is_student": null,
+        "evidence": null
+      },
+      "education": [
+        {
+          "level": "bsc",
+          "field": "Computer Science",
+          "institution": "University of Rijeka",
+          "status": "enrolled",
+          "expected_graduation": "2027-07",
+          "evidence": {
+            "text": "BSc Computer Science, University of Rijeka (2027)",
+            "source_field": "cv_text",
+            "char_start": 17,
+            "char_end": 66
+          }
+        }
+      ],
+      "skills": [
+        {
+          "name": "Java",
+          "evidence": {
+            "text": "Java projects for university courses",
+            "source_field": "cv_text",
+            "char_start": 67,
+            "char_end": 103
+          }
+        },
+        {
+          "name": "Spring",
+          "evidence": {
+            "text": "Spring Boot web service",
+            "source_field": "cv_text",
+            "char_start": 104,
+            "char_end": 127
+          }
+        },
+        {
+          "name": "Streamlit",
+          "evidence": {
+            "text": "Prototype dashboards with Streamlit",
+            "source_field": "cv_text",
+            "char_start": 128,
+            "char_end": 163
+          }
+        },
+        {
+          "name": "SQL",
+          "evidence": {
+            "text": "Basic SQL",
+            "source_field": "cv_text",
+            "char_start": 164,
+            "char_end": 173
+          }
+        }
+      ],
+      "experience": [],
+      "languages": [
+        {
+          "language": "English",
+          "level": "B1",
+          "evidence": {
+            "text": "English (B1)",
+            "source_field": "cv_text",
+            "char_start": 174,
+            "char_end": 186
+          }
+        },
+        {
+          "language": "German",
+          "level": "A2",
+          "evidence": {
+            "text": "German (A2)",
+            "source_field": "cv_text",
+            "char_start": 187,
+            "char_end": 198
+          }
+        },
+        {
+          "language": "Croatian",
+          "level": "native",
+          "evidence": {
+            "text": "Croatian (native)",
+            "source_field": "cv_text",
+            "char_start": 199,
+            "char_end": 216
+          }
+        }
+      ],
+      "preferences": {
+        "target_roles": [
+          "java developer"
+        ],
+        "interests": null,
+        "locations": [
+          "Zagreb"
+        ],
+        "remote_mode": null,
+        "job_types": [
+          "internship"
+        ]
+      }
+    },
+    "normalized": {
+      "skills": [
+        {
+          "source_term": "Java",
+          "normalized_label": "Java",
+          "esco_concept": {
+            "uri": "http://data.europa.eu/esco/skill/mock-java-computer-programming",
+            "preferred_label": "Java (computer programming)"
+          },
+          "mapping": {
+            "status": "EXACT",
+            "method": "exact_lookup",
+            "confidence": 1.0
+          },
+          "modality": "unspecified",
+          "evidence": {
+            "text": "Java projects for university courses",
+            "source_field": "cv_text",
+            "char_start": 67,
+            "char_end": 103
+          }
+        },
+        {
+          "source_term": "Spring",
+          "normalized_label": "Spring",
+          "esco_concept": {
+            "uri": "http://data.europa.eu/esco/skill/mock-java-framework",
+            "preferred_label": "Java framework"
+          },
+          "mapping": {
+            "status": "RELATED",
+            "method": "embedding_similarity",
+            "confidence": 0.72
+          },
+          "modality": "unspecified",
+          "evidence": {
+            "text": "Spring Boot web service",
+            "source_field": "cv_text",
+            "char_start": 104,
+            "char_end": 127
+          }
+        },
+        {
+          "source_term": "Streamlit",
+          "normalized_label": "Streamlit",
+          "esco_concept": null,
+          "mapping": {
+            "status": "UNMAPPED",
+            "method": "none",
+            "confidence": 0.0
+          },
+          "modality": "unspecified",
+          "evidence": {
+            "text": "Prototype dashboards with Streamlit",
+            "source_field": "cv_text",
+            "char_start": 128,
+            "char_end": 163
+          }
+        },
+        {
+          "source_term": "SQL",
+          "normalized_label": "SQL",
+          "esco_concept": {
+            "uri": "http://data.europa.eu/esco/skill/mock-sql",
+            "preferred_label": "SQL"
+          },
+          "mapping": {
+            "status": "EXACT",
+            "method": "exact_lookup",
+            "confidence": 1.0
+          },
+          "modality": "unspecified",
+          "evidence": {
+            "text": "Basic SQL",
+            "source_field": "cv_text",
+            "char_start": 164,
+            "char_end": 173
+          }
+        }
+      ],
+      "occupations": [
+        {
+          "source_term": "java developer",
+          "normalized_label": "software developer",
+          "esco_concept": {
+            "uri": "http://data.europa.eu/esco/occupation/mock-software-developer",
+            "preferred_label": "software developer"
+          },
+          "mapping": {
+            "status": "RELATED",
+            "method": "embedding_similarity",
+            "confidence": 0.84
+          },
+          "modality": null,
+          "evidence": null
+        }
+      ]
+    }
+  }
+]

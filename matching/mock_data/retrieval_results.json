@@ -1,0 +1,146 @@
+[
+  {
+    "schema_version": "1.0",
+    "candidate_id": "cand_001",
+    "encoder_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "k": 8,
+    "results": [
+      {
+        "job_id": "job_001",
+        "semantic_similarity": 0.87,
+        "retrieval_rank": 1
+      },
+      {
+        "job_id": "job_002",
+        "semantic_similarity": 0.84,
+        "retrieval_rank": 2
+      },
+      {
+        "job_id": "job_003",
+        "semantic_similarity": 0.78,
+        "retrieval_rank": 3
+      },
+      {
+        "job_id": "job_008",
+        "semantic_similarity": 0.7,
+        "retrieval_rank": 4
+      },
+      {
+        "job_id": "job_005",
+        "semantic_similarity": 0.62,
+        "retrieval_rank": 5
+      },
+      {
+        "job_id": "job_006",
+        "semantic_similarity": 0.55,
+        "retrieval_rank": 6
+      },
+      {
+        "job_id": "job_004",
+        "semantic_similarity": 0.48,
+        "retrieval_rank": 7
+      },
+      {
+        "job_id": "job_007",
+        "semantic_similarity": 0.41,
+        "retrieval_rank": 8
+      }
+    ]
+  },
+  {
+    "schema_version": "1.0",
+    "candidate_id": "cand_002",
+    "encoder_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "k": 8,
+    "results": [
+      {
+        "job_id": "job_005",
+        "semantic_similarity": 0.86,
+        "retrieval_rank": 1
+      },
+      {
+        "job_id": "job_004",
+        "semantic_similarity": 0.83,
+        "retrieval_rank": 2
+      },
+      {
+        "job_id": "job_003",
+        "semantic_similarity": 0.72,
+        "retrieval_rank": 3
+      },
+      {
+        "job_id": "job_007",
+        "semantic_similarity": 0.66,
+        "retrieval_rank": 4
+      },
+      {
+        "job_id": "job_008",
+        "semantic_similarity": 0.63,
+        "retrieval_rank": 5
+      },
+      {
+        "job_id": "job_001",
+        "semantic_similarity": 0.52,
+        "retrieval_rank": 6
+      },
+      {
+        "job_id": "job_002",
+        "semantic_similarity": 0.5,
+        "retrieval_rank": 7
+      },
+      {
+        "job_id": "job_006",
+        "semantic_similarity": 0.47,
+        "retrieval_rank": 8
+      }
+    ]
+  },
+  {
+    "schema_version": "1.0",
+    "candidate_id": "cand_003",
+    "encoder_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "k": 8,
+    "results": [
+      {
+        "job_id": "job_006",
+        "semantic_similarity": 0.88,
+        "retrieval_rank": 1
+      },
+      {
+        "job_id": "job_003",
+        "semantic_similarity": 0.7,
+        "retrieval_rank": 2
+      },
+      {
+        "job_id": "job_005",
+        "semantic_similarity": 0.64,
+        "retrieval_rank": 3
+      },
+      {
+        "job_id": "job_007",
+        "semantic_similarity": 0.58,
+        "retrieval_rank": 4
+      },
+      {
+        "job_id": "job_008",
+        "semantic_similarity": 0.55,
+        "retrieval_rank": 5
+      },
+      {
+        "job_id": "job_002",
+        "semantic_similarity": 0.5,
+        "retrieval_rank": 6
+      },
+      {
+        "job_id": "job_001",
+        "semantic_similarity": 0.46,
+        "retrieval_rank": 7
+      },
+      {
+        "job_id": "job_004",
+        "semantic_similarity": 0.4,
+        "retrieval_rank": 8
+      }
+    ]
+  }
+]
