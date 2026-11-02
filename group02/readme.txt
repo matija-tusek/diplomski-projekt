@@ -1,1 +1,1 @@
-python group02/normalize.py --input group02/examples/candidate.json --skills data/esco/skills_en.csv --occupations data/esco/occupations_en.csv --output data/output/candidate_normalized.json
+python group02/normalize.py --input group02/normalization_demo/candidate.json --skills data/esco/skills_en.csv --occupations data/esco/occupations_en.csv --output data/output/candidate_normalized.json
