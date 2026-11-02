@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0",
+  "job_id": "job_284",
+  "source": {
+    "dataset": "synthetic",
+    "raw_text": "..."
+  },
+  "title": "Machine Learning Intern",
+  "occupation": "Machine Learning Intern",
+  "company": "Acme d.o.o.",
+  "job_type": "internship",
+  "location": {
+    "city": "Zagreb",
+    "country": "HR"
+  },
+  "remote_mode": {
+    "value": "hybrid",
+    "modality": "required",
+    "evidence": {
+      "text": "Hybrid, 2 days in office",
+      "source_field": "job_text",
+      "char_start": 120,
+      "char_end": 144
+    }
+  },
+  "skills": [
+    {
+      "name": "Python",
+      "modality": "required",
+      "evidence": {
+        "text": "Strong Python skills",
+        "source_field": "job_text",
+        "char_start": 300,
+        "char_end": 320
+      }
+    },
+    {
+      "name": "SQL",
+      "modality": "required",
+      "evidence": {
+        "text": "Working knowledge of SQL",
+        "source_field": "job_text",
+        "char_start": 322,
+        "char_end": 346
+      }
+    },
+    {
+      "name": "Docker",
+      "modality": "preferred",
+      "evidence": {
+        "text": "Experience with Docker is considered an advantage.",
+        "source_field": "job_text",
+        "char_start": 350,
+        "char_end": 400
+      }
+    }
+  ],
+  "education": {
+    "level": "msc",
+    "field": "Computer Science",
+    "modality": "required",
+    "evidence": {
+      "text": "Current MSc student in CS or related",
+      "source_field": "job_text",
+      "char_start": 200,
+      "char_end": 236
+    }
+  },
+  "student_status_required": {
+    "value": true,
+    "modality": "required",
+    "evidence": {
+      "text": "Current MSc student in CS or related",
+      "source_field": "job_text",
+      "char_start": 200,
+      "char_end": 236
+    }
+  },
+  "experience": {
+    "min_years": 2,
+    "modality": "preferred",
+    "evidence": {
+      "text": "2 years of experience is a plus",
+      "source_field": "job_text",
+      "char_start": 240,
+      "char_end": 271
+    }
+  },
+  "languages": [
+    {
+      "language": "English",
+      "level": "B2",
+      "modality": "required",
+      "evidence": {
+        "text": "Fluent English (B2+)",
+        "source_field": "job_text",
+        "char_start": 410,
+        "char_end": 430
+      }
+    }
+  ]
+}

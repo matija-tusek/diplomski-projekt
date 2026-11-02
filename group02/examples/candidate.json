@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.0",
+  "candidate_id": "cand_017",
+  "source": {
+    "type": "cv",
+    "raw_text": "..."
+  },
+  "student_status": {
+    "is_student": true,
+    "evidence": {
+      "text": "MSc student, FER Zagreb (expected 2027)",
+      "source_field": "cv_text",
+      "char_start": 30,
+      "char_end": 69
+    }
+  },
+  "education": [
+    {
+      "level": "msc",
+      "field": "Computer Science",
+      "institution": "FER Zagreb",
+      "status": "enrolled",
+      "expected_graduation": "2027-07",
+      "evidence": {
+        "text": "MSc student, FER Zagreb (expected 2027)",
+        "source_field": "cv_text",
+        "char_start": 30,
+        "char_end": 69
+      }
+    }
+  ],
+  "skills": [
+    {
+      "name": "Python",
+      "evidence": {
+        "text": "Developed machine-learning models in Python",
+        "source_field": "cv_text",
+        "char_start": 412,
+        "char_end": 455
+      }
+    },
+    {
+      "name": "FastAPI",
+      "evidence": {
+        "text": "built REST APIs using FastAPI",
+        "source_field": "cv_text",
+        "char_start": 470,
+        "char_end": 499
+      }
+    }
+  ],
+  "experience": [
+    {
+      "title": "ML research assistant",
+      "organization": "University lab",
+      "months": 12,
+      "description": "Developed machine-learning models for biomedical time series",
+      "evidence": {
+        "text": "Research assistant (2025-2026): ...",
+        "source_field": "cv_text",
+        "char_start": 380,
+        "char_end": 520
+      }
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "level": "C1",
+      "evidence": {
+        "text": "English (C1)",
+        "source_field": "cv_text",
+        "char_start": 900,
+        "char_end": 912
+      }
+    }
+  ],
+  "preferences": {
+    "target_roles": [
+      "machine learning engineer",
+      "data scientist"
+    ],
+    "interests": [
+      "machine learning",
+      "data science"
+    ],
+    "locations": [
+      "Zagreb"
+    ],
+    "remote_mode": "hybrid",
+    "job_types": [
+      "internship",
+      "junior"
+    ]
+  }
+}
