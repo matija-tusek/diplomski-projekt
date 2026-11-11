@@ -1,0 +1,8 @@
+Data Engineering Internship - CloudRiver
+
+Work from home or from our Ljubljana office, whatever suits you.
+
+CloudRiver helps retailers move their data to the cloud. As an intern you will join our data platform team for the summer.
+Our stack: Python, Apache Airflow and Spark, all running on Google Cloud.
+
+Apply with your CV and a short note about a data project you are proud of.

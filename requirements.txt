@@ -1,0 +1,6 @@
+# Shared dependencies for the whole pipeline (Git Rules, Rule 7).
+# Pull dev before editing; pin versions; mention new packages in the PR description.
+
+# Group 1: LLM extraction
+ollama==0.6.3
+pydantic==2.14.2

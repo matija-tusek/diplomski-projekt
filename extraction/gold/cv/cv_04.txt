@@ -1,0 +1,19 @@
+Ivana Kovačević
+Zagreb | ivana.kovacevic@example.com
+
+OBRAZOVANJE
+Diplomski studij Računarstva, Fakultet elektrotehnike i računarstva, Sveučilište u Zagrebu (upisana 2025., očekivani završetak 2027.)
+Preddiplomski studij Računarstva, FER, završen 2025.
+
+ISKUSTVO
+Studentski posao: Backend developer, Infobip, Zagreb (2025-07 - 2025-12)
+Razvijala sam mikroservise u Javi i Spring Bootu te pisala SQL upite nad bazom PostgreSQL.
+
+VJEŠTINE
+Java, Spring Boot, PostgreSQL, Docker, Git, Kotlin.
+
+JEZICI
+Hrvatski (materinski), engleski (C1), njemački (B1).
+
+ŽELJE
+Tražim studentsku praksu u području backend razvoja, po mogućnosti hibridno u Zagrebu.

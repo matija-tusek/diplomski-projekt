@@ -1,0 +1,203 @@
+{
+  "_format": "Hand-labelled answers for gold/cv/*.txt and gold/job/*.txt. 'a|b' = accepted alternatives (compared on lowercased letters/digits). skills_optional = borderline items that count neither as a hit nor as an error. null = the document does not state it (the model must also say null).",
+
+  "cv": {
+    "cv_01": {
+      "is_student": true,
+      "education": [
+        {"level": "msc", "status": "enrolled", "field": "Computer Science"},
+        {"level": "bsc", "status": "graduated", "field": "Computer Science"}
+      ],
+      "skills": ["Python", "PyTorch", "scikit-learn", "SQL", "PostgreSQL", "Git", "Linux", "Docker", "FastAPI", "C", "machine learning|machine-learning|machine-learning models"],
+      "skills_optional": ["REST APIs|REST API|REST", "data science", "time series|biomedical time series", "open-source software"],
+      "languages": [
+        {"language": "Croatian", "level": "native"},
+        {"language": "English", "level": "C1"},
+        {"language": "German", "level": "A2"}
+      ],
+      "experience": [
+        {"title": "Research assistant", "months": null},
+        {"title": "Teaching assistant", "months": null}
+      ],
+      "remote_mode": "hybrid",
+      "job_types": ["internship", "junior"]
+    },
+    "cv_02": {
+      "is_student": true,
+      "education": [
+        {"level": "bsc", "status": "enrolled", "field": "Computer Engineering"}
+      ],
+      "skills": ["JavaScript", "TypeScript", "React", "Vue.js|Vue", "HTML", "CSS", "Jest", "Figma", "Firebase"],
+      "skills_optional": ["unit testing|unit tests", "responsive design|responsive pages", "single-page application|SPA", "user interfaces|UI"],
+      "languages": [
+        {"language": "Croatian", "level": "native"},
+        {"language": "English", "level": "B2"}
+      ],
+      "experience": [
+        {"title": "Frontend Developer|Part-time Frontend Developer", "months": 6}
+      ],
+      "remote_mode": "remote",
+      "job_types": ["internship"]
+    },
+    "cv_03": {
+      "is_student": false,
+      "education": [
+        {"level": "msc", "status": "graduated", "field": "Applied Mathematics"},
+        {"level": "bsc", "status": "graduated", "field": "Mathematics"}
+      ],
+      "skills": ["Statistics", "R", "Python", "pandas", "SQL", "Power BI", "Excel"],
+      "skills_optional": ["dashboards|sales dashboards", "reporting|automated reporting|reporting automation", "data cleaning", "data analysis|analytics", "data science"],
+      "languages": [
+        {"language": "Croatian", "level": "native"},
+        {"language": "English", "level": null},
+        {"language": "Italian", "level": null}
+      ],
+      "experience": [
+        {"title": "Data Analyst", "months": null},
+        {"title": "Analyst intern", "months": null}
+      ],
+      "remote_mode": null,
+      "job_types": ["junior"]
+    },
+    "cv_04": {
+      "is_student": true,
+      "education": [
+        {"level": "msc", "status": "enrolled", "field": "Računarstvo|Računarstva|Computer Science|Computing"},
+        {"level": "bsc", "status": "graduated", "field": "Računarstvo|Računarstva|Computer Science|Computing"}
+      ],
+      "skills": ["Java", "Spring Boot", "PostgreSQL", "Docker", "Git", "Kotlin", "SQL"],
+      "skills_optional": ["mikroservisi|microservices|mikroservise", "backend|backend development|backend razvoj"],
+      "languages": [
+        {"language": "Croatian|Hrvatski", "level": "native"},
+        {"language": "English|engleski", "level": "C1"},
+        {"language": "German|njemački", "level": "B1"}
+      ],
+      "experience": [
+        {"title": "Backend developer", "months": 6}
+      ],
+      "remote_mode": "hybrid",
+      "job_types": ["internship"]
+    },
+    "cv_05": {
+      "is_student": false,
+      "education": [
+        {"level": "bsc", "status": "dropped_out", "field": "Computer Science"},
+        {"level": "high_school", "status": "graduated", "field": null}
+      ],
+      "skills": ["PHP", "WordPress", "JavaScript", "MySQL", "Shopify", "SEO"],
+      "skills_optional": ["web development", "e-commerce|online shops", "PHP plugins|custom PHP plugins"],
+      "languages": [
+        {"language": "Croatian", "level": "native"},
+        {"language": "English", "level": "B2"},
+        {"language": "Spanish", "level": "A2"}
+      ],
+      "experience": [
+        {"title": "Web development intern", "months": 6},
+        {"title": "Freelance web developer", "months": null}
+      ],
+      "remote_mode": null,
+      "job_types": null
+    }
+  },
+
+  "job": {
+    "job_01": {
+      "job_type": "internship",
+      "remote_mode": "hybrid",
+      "city": "Zagreb",
+      "country": "HR",
+      "skills": [
+        {"name": "Python", "modality": "required"},
+        {"name": "SQL", "modality": "required"},
+        {"name": "pandas", "modality": "required"},
+        {"name": "scikit-learn", "modality": "required"},
+        {"name": "Docker", "modality": "preferred"},
+        {"name": "AWS", "modality": "preferred"}
+      ],
+      "skills_optional": ["forecasting|forecasting models", "data science"],
+      "languages": [
+        {"language": "English", "level": "B2", "modality": "required"},
+        {"language": "German", "level": null, "modality": "preferred"}
+      ],
+      "education": {"level": "msc", "field": "Computer Science", "modality": "required"},
+      "student_status_required": true,
+      "experience_min_years": null
+    },
+    "job_02": {
+      "job_type": "junior",
+      "remote_mode": "remote",
+      "city": "Berlin",
+      "country": "DE",
+      "skills": [
+        {"name": "Java", "modality": "required"},
+        {"name": "Spring Boot", "modality": "required"},
+        {"name": "PostgreSQL", "modality": "required"},
+        {"name": "Kubernetes", "modality": "preferred"},
+        {"name": "Kafka", "modality": "preferred"}
+      ],
+      "skills_optional": ["relational databases", "container orchestration", "backend development|backend"],
+      "languages": [
+        {"language": "English", "level": "B2", "modality": "required"}
+      ],
+      "education": null,
+      "student_status_required": null,
+      "experience_min_years": 1
+    },
+    "job_03": {
+      "job_type": "internship",
+      "remote_mode": "onsite",
+      "city": "Split",
+      "country": "HR",
+      "skills": [
+        {"name": "Excel|Excela", "modality": "required"},
+        {"name": "SQL|SQL-a", "modality": "required"},
+        {"name": "Power BI", "modality": "preferred"},
+        {"name": "Python|Pythona", "modality": "preferred"}
+      ],
+      "skills_optional": ["data analysis|analiza podataka|analiza prodajnih podataka", "reporting|izrada izvještaja|izvještaji"],
+      "languages": [
+        {"language": "English|Engleski|Engleski jezik", "level": "B2", "modality": "required"}
+      ],
+      "education": null,
+      "student_status_required": true,
+      "experience_min_years": null
+    },
+    "job_04": {
+      "job_type": "internship",
+      "remote_mode": "any",
+      "city": "Ljubljana",
+      "country": "SI",
+      "skills": [
+        {"name": "Python", "modality": "unspecified"},
+        {"name": "Apache Airflow|Airflow", "modality": "unspecified"},
+        {"name": "Spark|Apache Spark", "modality": "unspecified"},
+        {"name": "Google Cloud|GCP|Google Cloud Platform", "modality": "unspecified"}
+      ],
+      "skills_optional": ["data engineering", "cloud"],
+      "languages": [],
+      "education": null,
+      "student_status_required": null,
+      "experience_min_years": null
+    },
+    "job_05": {
+      "job_type": "junior",
+      "remote_mode": "hybrid",
+      "city": "Vienna|Wien",
+      "country": "AT",
+      "skills": [
+        {"name": "Linux", "modality": "required"},
+        {"name": "Bash|Bash scripting", "modality": "required"},
+        {"name": "Terraform", "modality": "required"},
+        {"name": "AWS", "modality": "required"}
+      ],
+      "skills_optional": ["DevOps", "operations"],
+      "languages": [
+        {"language": "German", "level": "C1", "modality": "preferred"},
+        {"language": "English", "level": null, "modality": "unspecified|required"}
+      ],
+      "education": {"level": "bsc", "field": "Computer Science", "modality": "required"},
+      "student_status_required": null,
+      "experience_min_years": 2
+    }
+  }
+}

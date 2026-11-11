@@ -1,0 +1,25 @@
+Ana Horvat
+Zagreb, Croatia | ana.horvat@example.com
+
+EDUCATION
+MSc student in Computer Science, Faculty of Electrical Engineering and Computing (FER), University of Zagreb, expected graduation July 2027.
+BSc in Computer Science, FER Zagreb, 2025.
+
+EXPERIENCE
+Research assistant, Biomedical Signal Processing Lab, FER (2025 - present)
+Developed machine-learning models in Python for biomedical time series.
+Built REST APIs using FastAPI to serve model predictions to the lab's dashboard.
+
+Teaching assistant, Introduction to Programming (2024)
+Ran weekly lab sessions in C for first-year students.
+
+SKILLS
+Python, PyTorch, scikit-learn, SQL (PostgreSQL), Git, Linux.
+Basic experience with Docker from university projects.
+
+LANGUAGES
+Croatian (native), English (C1), German (A2).
+
+INTERESTS
+Machine learning, data science, open-source software.
+Looking for a hybrid internship or junior position in Zagreb.

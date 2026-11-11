@@ -1,0 +1,22 @@
+MARKO NOVAK
+Rijeka, Croatia
+marko.novak@example.com
+
+PROFILE
+Data analyst with a master's degree in Applied Mathematics. Interested in junior data science and analytics roles in Rijeka or Zagreb.
+
+EDUCATION
+Master of Science in Applied Mathematics, University of Rijeka, Faculty of Mathematics, graduated 2025.
+Bachelor of Science in Mathematics, University of Rijeka, graduated 2023.
+
+WORK EXPERIENCE
+Data Analyst, Adriatic Insurance (2025 - present)
+Builds weekly sales dashboards in Power BI and automates reporting with Python and pandas.
+Analyst intern, Kvarner Logistics (2024)
+Wrote SQL queries to clean shipment data and presented results in Excel.
+
+SKILLS
+Statistics, R, Python, pandas, SQL, Power BI, Excel.
+
+LANGUAGES
+Croatian (native), fluent English, basic Italian.
