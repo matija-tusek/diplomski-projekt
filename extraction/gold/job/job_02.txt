@@ -1,0 +1,17 @@
+Junior Backend Developer (Java)
+NordStack GmbH - Berlin, Germany - Fully remote within the EU
+
+About us
+NordStack builds payment infrastructure for online marketplaces.
+
+Requirements
+- At least 1 year of professional experience in backend development.
+- Solid knowledge of Java and Spring Boot.
+- Experience with relational databases such as PostgreSQL.
+- English at B2 level or above.
+
+Nice to have
+- Kubernetes or other container orchestration.
+- Experience with Kafka.
+
+We offer a full-time position, a laptop of your choice and a yearly learning budget.

@@ -1,0 +1,12 @@
+Junior DevOps Engineer
+Alpenwerk IT, Vienna, Austria (hybrid: 3 days in the office)
+
+Your profile
+- Bachelor's degree in Computer Science, Information Technology or a similar field.
+- Good knowledge of Linux and Bash scripting.
+- Hands-on experience with Terraform and AWS.
+- 2 years of experience in an operations or DevOps role is preferred.
+- German at C1 level is an advantage; English is the team language.
+
+What we offer
+Permanent contract, flexible hours and modern equipment.

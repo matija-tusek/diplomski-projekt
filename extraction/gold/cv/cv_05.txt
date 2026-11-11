@@ -1,0 +1,21 @@
+Petra Jurić
+Split, Croatia | petra.juric@example.com
+
+SUMMARY
+Self-taught web developer. I left my Computer Science bachelor's studies at the University of Split in 2024 to work full time.
+
+EDUCATION
+Computer Science (BSc), University of Split - studies not completed, left in 2024.
+Gymnasium (general high school), Split, finished 2021.
+
+EXPERIENCE
+Web development intern, BlueWave Agency, Split
+A 6-month internship where I built WordPress sites and custom PHP plugins.
+Freelance web developer (2024 - present)
+Building online shops for small businesses with Shopify and JavaScript.
+
+SKILLS
+PHP, WordPress, JavaScript, MySQL, Shopify, SEO.
+
+LANGUAGES
+Croatian (native), English (B2), Spanish (A2).

@@ -1,0 +1,22 @@
+# Virtual environments, secrets & Python cache
+.venv/
+venv/
+__pycache__/
+*.pyc
+.env
+
+# Datasets, ESCO taxonomy dumps & LLM model weights
+data/
+datasets/
+models/
+*.gguf
+*.bin
+*.safetensors
+
+# Local Vector Databases (Qdrant / FAISS)
+qdrant_storage/
+faiss_index/
+*.index
+
+# Generated pipeline output
+output/

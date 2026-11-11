@@ -1,0 +1,20 @@
+Luka Babić
+Osijek, Croatia | luka.babic@example.com | github.com/lbabic
+
+ABOUT ME
+Third-year undergraduate student of Computer Engineering at FERIT Osijek, expected to finish my bachelor's degree in June 2027.
+I enjoy building user interfaces and I am looking for a remote frontend internship.
+
+EXPERIENCE
+Part-time Frontend Developer, PixelForge d.o.o., Osijek (2025-10 - 2026-03)
+Implemented responsive pages in React and TypeScript and wrote unit tests with Jest.
+
+PROJECTS
+Personal budget app: a single-page application built with Vue.js and Firebase.
+
+TECHNICAL SKILLS
+JavaScript, TypeScript, React, Vue.js, HTML, CSS, Jest, Figma.
+
+LANGUAGES
+Croatian - mother tongue
+English - B2

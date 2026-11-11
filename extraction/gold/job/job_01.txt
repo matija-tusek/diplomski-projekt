@@ -1,0 +1,17 @@
+Machine Learning Intern - Acme d.o.o.
+Location: Zagreb, Croatia. Hybrid, 2 days per week in the office.
+
+About the role
+Join our data team for a 6-month paid internship and help us build forecasting models for retail clients.
+
+What we're looking for
+- Current MSc student in Computer Science or a related field.
+- Strong Python skills.
+- Working knowledge of SQL.
+- Familiarity with pandas and scikit-learn.
+- Experience with Docker is considered an advantage.
+- Knowledge of AWS is a plus.
+- Fluent English (B2 or higher) is required.
+- German is a plus.
+
+We offer mentorship, flexible hours and a monthly stipend.
