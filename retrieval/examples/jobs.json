@@ -1,0 +1,714 @@
+[
+  {
+    "schema_version": "1.0",
+    "entity_type": "job",
+    "entity_id": "job_284",
+    "profile": {
+      "schema_version": "1.0",
+      "job_id": "job_284",
+      "title": "Machine Learning Intern",
+      "occupation": "Machine Learning Intern",
+      "job_type": "internship",
+      "location": {
+        "city": "Zagreb",
+        "country": "HR"
+      },
+      "remote_mode": {
+        "value": "hybrid",
+        "modality": "required"
+      },
+      "skills": [
+        {
+          "name": "Python",
+          "modality": "required"
+        },
+        {
+          "name": "SQL",
+          "modality": "required"
+        },
+        {
+          "name": "Docker",
+          "modality": "preferred"
+        }
+      ],
+      "education": {
+        "level": "msc",
+        "field": "Computer Science",
+        "modality": "required"
+      },
+      "experience": {
+        "min_years": 2,
+        "modality": "preferred"
+      },
+      "languages": [
+        {
+          "language": "English",
+          "level": "B2",
+          "modality": "required"
+        }
+      ]
+    },
+    "normalized": {
+      "skills": [
+        {
+          "source_term": "Python",
+          "normalized_label": "Python",
+          "esco_concept": {
+            "uri": "http://data.europa.eu/esco/skill/...",
+            "preferred_label": "Python (computer programming)"
+          },
+          "mapping": {
+            "status": "EXACT",
+            "method": "alias_lookup",
+            "confidence": 1.0
+          },
+          "modality": "required",
+          "evidence": null
+        },
+        {
+          "source_term": "SQL",
+          "normalized_label": "SQL",
+          "esco_concept": {
+            "uri": "http://data.europa.eu/esco/skill/...",
+            "preferred_label": "SQL"
+          },
+          "mapping": {
+            "status": "EXACT",
+            "method": "alias_lookup",
+            "confidence": 1.0
+          },
+          "modality": "required",
+          "evidence": null
+        },
+        {
+          "source_term": "Docker",
+          "normalized_label": "Docker",
+          "esco_concept": {
+            "uri": "http://data.europa.eu/esco/skill/...",
+            "preferred_label": "Docker"
+          },
+          "mapping": {
+            "status": "EXACT",
+            "method": "alias_lookup",
+            "confidence": 1.0
+          },
+          "modality": "preferred",
+          "evidence": null
+        }
+      ],
+      "occupations": [
+        {
+          "source_term": "Machine Learning Intern",
+          "normalized_label": "Machine Learning Intern",
+          "esco_concept": {
+            "uri": "http://data.europa.eu/esco/occupation/...",
+            "preferred_label": "data scientist"
+          },
+          "mapping": {
+            "status": "RELATED",
+            "method": "embedding_similarity",
+            "confidence": 0.8
+          }
+        }
+      ]
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "entity_type": "job",
+    "entity_id": "job_102",
+    "profile": {
+      "schema_version": "1.0",
+      "job_id": "job_102",
+      "title": "Junior Data Scientist",
+      "occupation": "Junior Data Scientist",
+      "job_type": "internship",
+      "location": {
+        "city": "Munich",
+        "country": "HR"
+      },
+      "remote_mode": {
+        "value": "onsite",
+        "modality": "required"
+      },
+      "skills": [
+        {
+          "name": "Python",
+          "modality": "required"
+        },
+        {
+          "name": "machine learning",
+          "modality": "required"
+        },
+        {
+          "name": "statistics",
+          "modality": "preferred"
+        }
+      ],
+      "education": null,
+      "experience": null,
+      "languages": [
+        {
+          "language": "German",
+          "level": "B2",
+          "modality": "required"
+        }
+      ]
+    },
+    "normalized": {
+      "skills": [
+        {
+          "source_term": "Python",
+          "normalized_label": "Python",
+          "esco_concept": {
+            "uri": "http://data.europa.eu/esco/skill/...",
+            "preferred_label": "Python (computer programming)"
+          },
+          "mapping": {
+            "status": "EXACT",
+            "method": "alias_lookup",
+            "confidence": 1.0
+          },
+          "modality": "required",
+          "evidence": null
+        },
+        {
+          "source_term": "machine learning",
+          "normalized_label": "machine learning",
+          "esco_concept": {
+            "uri": "http://data.europa.eu/esco/skill/...",
+            "preferred_label": "machine learning"
+          },
+          "mapping": {
+            "status": "EXACT",
+            "method": "alias_lookup",
+            "confidence": 1.0
+          },
+          "modality": "required",
+          "evidence": null
+        },
+        {
+          "source_term": "statistics",
+          "normalized_label": "statistics",
+          "esco_concept": {
+            "uri": "http://data.europa.eu/esco/skill/...",
+            "preferred_label": "statistics"
+          },
+          "mapping": {
+            "status": "EXACT",
+            "method": "alias_lookup",
+            "confidence": 1.0
+          },
+          "modality": "preferred",
+          "evidence": null
+        }
+      ],
+      "occupations": [
+        {
+          "source_term": "Junior Data Scientist",
+          "normalized_label": "Junior Data Scientist",
+          "esco_concept": {
+            "uri": "http://data.europa.eu/esco/occupation/...",
+            "preferred_label": "data scientist"
+          },
+          "mapping": {
+            "status": "EXACT",
+            "method": "embedding_similarity",
+            "confidence": 0.8
+          }
+        }
+      ]
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "entity_type": "job",
+    "entity_id": "job_115",
+    "profile": {
+      "schema_version": "1.0",
+      "job_id": "job_115",
+      "title": "Python Backend Intern",
+      "occupation": "Python Backend Intern",
+      "job_type": "internship",
+      "location": {
+        "city": "Split",
+        "country": "HR"
+      },
+      "remote_mode": {
+        "value": "remote",
+        "modality": "required"
+      },
+      "skills": [
+        {
+          "name": "Python",
+          "modality": "required"
+        },
+        {
+          "name": "FastAPI",
+          "modality": "required"
+        },
+        {
+          "name": "PostgreSQL",
+          "modality": "preferred"
+        }
+      ],
+      "education": null,
+      "experience": null,
+      "languages": []
+    },
+    "normalized": {
+      "skills": [
+        {
+          "source_term": "Python",
+          "normalized_label": "Python",
+          "esco_concept": {
+            "uri": "http://data.europa.eu/esco/skill/...",
+            "preferred_label": "Python (computer programming)"
+          },
+          "mapping": {
+            "status": "EXACT",
+            "method": "alias_lookup",
+            "confidence": 1.0
+          },
+          "modality": "required",
+          "evidence": null
+        },
+        {
+          "source_term": "FastAPI",
+          "normalized_label": "FastAPI",
+          "esco_concept": {
+            "uri": "http://data.europa.eu/esco/skill/...",
+            "preferred_label": "web programming"
+          },
+          "mapping": {
+            "status": "RELATED",
+            "method": "embedding_similarity",
+            "confidence": 0.81
+          },
+          "modality": "required",
+          "evidence": null
+        },
+        {
+          "source_term": "PostgreSQL",
+          "normalized_label": "PostgreSQL",
+          "esco_concept": {
+            "uri": "http://data.europa.eu/esco/skill/...",
+            "preferred_label": "PostgreSQL"
+          },
+          "mapping": {
+            "status": "EXACT",
+            "method": "alias_lookup",
+            "confidence": 1.0
+          },
+          "modality": "preferred",
+          "evidence": null
+        }
+      ],
+      "occupations": [
+        {
+          "source_term": "Python Backend Intern",
+          "normalized_label": "Python Backend Intern",
+          "esco_concept": {
+            "uri": "http://data.europa.eu/esco/occupation/...",
+            "preferred_label": "software developer"
+          },
+          "mapping": {
+            "status": "RELATED",
+            "method": "embedding_similarity",
+            "confidence": 0.8
+          }
+        }
+      ]
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "entity_type": "job",
+    "entity_id": "job_163",
+    "profile": {
+      "schema_version": "1.0",
+      "job_id": "job_163",
+      "title": "Data Analyst Intern",
+      "occupation": "Data Analyst Intern",
+      "job_type": "internship",
+      "location": {
+        "city": "Zagreb",
+        "country": "HR"
+      },
+      "remote_mode": {
+        "value": "onsite",
+        "modality": "required"
+      },
+      "skills": [
+        {
+          "name": "SQL",
+          "modality": "required"
+        },
+        {
+          "name": "Excel",
+          "modality": "required"
+        },
+        {
+          "name": "Power BI",
+          "modality": "preferred"
+        }
+      ],
+      "education": {
+        "level": "bsc",
+        "field": "Economics",
+        "modality": "required"
+      },
+      "experience": null,
+      "languages": []
+    },
+    "normalized": {
+      "skills": [
+        {
+          "source_term": "SQL",
+          "normalized_label": "SQL",
+          "esco_concept": {
+            "uri": "http://data.europa.eu/esco/skill/...",
+            "preferred_label": "SQL"
+          },
+          "mapping": {
+            "status": "EXACT",
+            "method": "alias_lookup",
+            "confidence": 1.0
+          },
+          "modality": "required",
+          "evidence": null
+        },
+        {
+          "source_term": "Excel",
+          "normalized_label": "Excel",
+          "esco_concept": {
+            "uri": "http://data.europa.eu/esco/skill/...",
+            "preferred_label": "use spreadsheets software"
+          },
+          "mapping": {
+            "status": "RELATED",
+            "method": "fuzzy_match",
+            "confidence": 0.88
+          },
+          "modality": "required",
+          "evidence": null
+        },
+        {
+          "source_term": "Power BI",
+          "normalized_label": "Power BI",
+          "esco_concept": {
+            "uri": "http://data.europa.eu/esco/skill/...",
+            "preferred_label": "data visualisation software"
+          },
+          "mapping": {
+            "status": "RELATED",
+            "method": "embedding_similarity",
+            "confidence": 0.76
+          },
+          "modality": "preferred",
+          "evidence": null
+        }
+      ],
+      "occupations": [
+        {
+          "source_term": "Data Analyst Intern",
+          "normalized_label": "Data Analyst Intern",
+          "esco_concept": {
+            "uri": "http://data.europa.eu/esco/occupation/...",
+            "preferred_label": "data analyst"
+          },
+          "mapping": {
+            "status": "EXACT",
+            "method": "embedding_similarity",
+            "confidence": 0.8
+          }
+        }
+      ]
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "entity_type": "job",
+    "entity_id": "job_226",
+    "profile": {
+      "schema_version": "1.0",
+      "job_id": "job_226",
+      "title": "UX/UI Design Intern",
+      "occupation": "UX/UI Design Intern",
+      "job_type": "internship",
+      "location": {
+        "city": "Zagreb",
+        "country": "HR"
+      },
+      "remote_mode": {
+        "value": "hybrid",
+        "modality": "required"
+      },
+      "skills": [
+        {
+          "name": "Figma",
+          "modality": "required"
+        },
+        {
+          "name": "user research",
+          "modality": "preferred"
+        }
+      ],
+      "education": null,
+      "experience": null,
+      "languages": []
+    },
+    "normalized": {
+      "skills": [
+        {
+          "source_term": "Figma",
+          "normalized_label": "Figma",
+          "esco_concept": {
+            "uri": "http://data.europa.eu/esco/skill/...",
+            "preferred_label": "use interface design software"
+          },
+          "mapping": {
+            "status": "RELATED",
+            "method": "embedding_similarity",
+            "confidence": 0.7
+          },
+          "modality": "required",
+          "evidence": null
+        },
+        {
+          "source_term": "user research",
+          "normalized_label": "user research",
+          "esco_concept": {
+            "uri": "http://data.europa.eu/esco/skill/...",
+            "preferred_label": "conduct user research"
+          },
+          "mapping": {
+            "status": "RELATED",
+            "method": "embedding_similarity",
+            "confidence": 0.83
+          },
+          "modality": "preferred",
+          "evidence": null
+        }
+      ],
+      "occupations": [
+        {
+          "source_term": "UX/UI Design Intern",
+          "normalized_label": "UX/UI Design Intern",
+          "esco_concept": {
+            "uri": "http://data.europa.eu/esco/occupation/...",
+            "preferred_label": "user interface designer"
+          },
+          "mapping": {
+            "status": "RELATED",
+            "method": "embedding_similarity",
+            "confidence": 0.8
+          }
+        }
+      ]
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "entity_type": "job",
+    "entity_id": "job_311",
+    "profile": {
+      "schema_version": "1.0",
+      "job_id": "job_311",
+      "title": "Frontend Developer Intern",
+      "occupation": "Frontend Developer Intern",
+      "job_type": "internship",
+      "location": {
+        "city": "Zagreb",
+        "country": "HR"
+      },
+      "remote_mode": {
+        "value": "hybrid",
+        "modality": "required"
+      },
+      "skills": [
+        {
+          "name": "JavaScript",
+          "modality": "required"
+        },
+        {
+          "name": "React",
+          "modality": "required"
+        },
+        {
+          "name": "TypeScript",
+          "modality": "preferred"
+        }
+      ],
+      "education": null,
+      "experience": null,
+      "languages": []
+    },
+    "normalized": {
+      "skills": [
+        {
+          "source_term": "JavaScript",
+          "normalized_label": "JavaScript",
+          "esco_concept": {
+            "uri": "http://data.europa.eu/esco/skill/...",
+            "preferred_label": "JavaScript"
+          },
+          "mapping": {
+            "status": "EXACT",
+            "method": "alias_lookup",
+            "confidence": 1.0
+          },
+          "modality": "required",
+          "evidence": null
+        },
+        {
+          "source_term": "React",
+          "normalized_label": "React",
+          "esco_concept": {
+            "uri": "http://data.europa.eu/esco/skill/...",
+            "preferred_label": "web programming"
+          },
+          "mapping": {
+            "status": "RELATED",
+            "method": "embedding_similarity",
+            "confidence": 0.78
+          },
+          "modality": "required",
+          "evidence": null
+        },
+        {
+          "source_term": "TypeScript",
+          "normalized_label": "TypeScript",
+          "esco_concept": {
+            "uri": "http://data.europa.eu/esco/skill/...",
+            "preferred_label": "TypeScript"
+          },
+          "mapping": {
+            "status": "EXACT",
+            "method": "alias_lookup",
+            "confidence": 1.0
+          },
+          "modality": "preferred",
+          "evidence": null
+        }
+      ],
+      "occupations": [
+        {
+          "source_term": "Frontend Developer Intern",
+          "normalized_label": "Frontend Developer Intern",
+          "esco_concept": {
+            "uri": "http://data.europa.eu/esco/occupation/...",
+            "preferred_label": "web developer"
+          },
+          "mapping": {
+            "status": "RELATED",
+            "method": "embedding_similarity",
+            "confidence": 0.8
+          }
+        }
+      ]
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "entity_type": "job",
+    "entity_id": "job_402",
+    "profile": {
+      "schema_version": "1.0",
+      "job_id": "job_402",
+      "title": "NLP Engineer Intern",
+      "occupation": "NLP Engineer Intern",
+      "job_type": "internship",
+      "location": {
+        "city": "Zagreb",
+        "country": "HR"
+      },
+      "remote_mode": {
+        "value": "hybrid",
+        "modality": "required"
+      },
+      "skills": [
+        {
+          "name": "Python",
+          "modality": "required"
+        },
+        {
+          "name": "transformers",
+          "modality": "unspecified"
+        },
+        {
+          "name": "NLP",
+          "modality": "required"
+        }
+      ],
+      "education": {
+        "level": "msc",
+        "field": "Computer Science",
+        "modality": "required"
+      },
+      "experience": null,
+      "languages": []
+    },
+    "normalized": {
+      "skills": [
+        {
+          "source_term": "Python",
+          "normalized_label": "Python",
+          "esco_concept": {
+            "uri": "http://data.europa.eu/esco/skill/...",
+            "preferred_label": "Python (computer programming)"
+          },
+          "mapping": {
+            "status": "EXACT",
+            "method": "alias_lookup",
+            "confidence": 1.0
+          },
+          "modality": "required",
+          "evidence": null
+        },
+        {
+          "source_term": "transformers",
+          "normalized_label": "transformers",
+          "esco_concept": null,
+          "mapping": {
+            "status": "UNMAPPED",
+            "method": "none",
+            "confidence": 0.0
+          },
+          "modality": "unspecified",
+          "evidence": null
+        },
+        {
+          "source_term": "NLP",
+          "normalized_label": "NLP",
+          "esco_concept": {
+            "uri": "http://data.europa.eu/esco/skill/...",
+            "preferred_label": "natural language processing"
+          },
+          "mapping": {
+            "status": "EXACT",
+            "method": "alias_lookup",
+            "confidence": 1.0
+          },
+          "modality": "required",
+          "evidence": null
+        }
+      ],
+      "occupations": [
+        {
+          "source_term": "NLP Engineer Intern",
+          "normalized_label": "NLP Engineer Intern",
+          "esco_concept": {
+            "uri": "http://data.europa.eu/esco/occupation/...",
+            "preferred_label": "data scientist"
+          },
+          "mapping": {
+            "status": "RELATED",
+            "method": "embedding_similarity",
+            "confidence": 0.8
+          }
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,294 @@
+[
+  {
+    "schema_version": "1.0",
+    "entity_type": "candidate",
+    "entity_id": "cand_017",
+    "profile": {
+      "schema_version": "1.0",
+      "candidate_id": "cand_017",
+      "education": [
+        {
+          "level": "msc",
+          "field": "Computer Science",
+          "status": "enrolled"
+        }
+      ],
+      "skills": [
+        {
+          "name": "Python"
+        },
+        {
+          "name": "PyTorch"
+        },
+        {
+          "name": "SQL"
+        },
+        {
+          "name": "FastAPI"
+        },
+        {
+          "name": "Hugging Face"
+        }
+      ],
+      "experience": [
+        {
+          "title": "ML research assistant",
+          "description": "Developed machine-learning models for biomedical time series"
+        }
+      ],
+      "languages": [
+        {
+          "language": "English",
+          "level": "C1"
+        }
+      ],
+      "preferences": {
+        "target_roles": [
+          "machine learning engineer",
+          "data scientist"
+        ],
+        "interests": [
+          "machine learning",
+          "data science"
+        ],
+        "locations": [
+          "Zagreb"
+        ],
+        "remote_mode": "hybrid",
+        "job_types": [
+          "internship",
+          "junior"
+        ]
+      }
+    },
+    "normalized": {
+      "skills": [
+        {
+          "source_term": "Python",
+          "normalized_label": "Python",
+          "esco_concept": {
+            "uri": "http://data.europa.eu/esco/skill/...",
+            "preferred_label": "Python (computer programming)"
+          },
+          "mapping": {
+            "status": "EXACT",
+            "method": "alias_lookup",
+            "confidence": 1.0
+          },
+          "modality": "unspecified",
+          "evidence": null
+        },
+        {
+          "source_term": "PyTorch",
+          "normalized_label": "PyTorch",
+          "esco_concept": {
+            "uri": "http://data.europa.eu/esco/skill/...",
+            "preferred_label": "machine learning"
+          },
+          "mapping": {
+            "status": "RELATED",
+            "method": "embedding_similarity",
+            "confidence": 0.74
+          },
+          "modality": "unspecified",
+          "evidence": null
+        },
+        {
+          "source_term": "SQL",
+          "normalized_label": "SQL",
+          "esco_concept": {
+            "uri": "http://data.europa.eu/esco/skill/...",
+            "preferred_label": "SQL"
+          },
+          "mapping": {
+            "status": "EXACT",
+            "method": "alias_lookup",
+            "confidence": 1.0
+          },
+          "modality": "unspecified",
+          "evidence": null
+        },
+        {
+          "source_term": "FastAPI",
+          "normalized_label": "FastAPI",
+          "esco_concept": {
+            "uri": "http://data.europa.eu/esco/skill/...",
+            "preferred_label": "web programming"
+          },
+          "mapping": {
+            "status": "RELATED",
+            "method": "embedding_similarity",
+            "confidence": 0.81
+          },
+          "modality": "unspecified",
+          "evidence": null
+        },
+        {
+          "source_term": "Hugging Face",
+          "normalized_label": "Hugging Face",
+          "esco_concept": null,
+          "mapping": {
+            "status": "UNMAPPED",
+            "method": "none",
+            "confidence": 0.0
+          },
+          "modality": "unspecified",
+          "evidence": null
+        }
+      ],
+      "occupations": [
+        {
+          "source_term": "machine learning engineer",
+          "normalized_label": "machine learning engineer",
+          "esco_concept": {
+            "uri": "http://data.europa.eu/esco/occupation/...",
+            "preferred_label": "data scientist"
+          },
+          "mapping": {
+            "status": "RELATED",
+            "method": "embedding_similarity",
+            "confidence": 0.8
+          }
+        }
+      ]
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "entity_type": "candidate",
+    "entity_id": "cand_042",
+    "profile": {
+      "schema_version": "1.0",
+      "candidate_id": "cand_042",
+      "education": [
+        {
+          "level": "bsc",
+          "field": "Computer Science",
+          "status": "enrolled"
+        }
+      ],
+      "skills": [
+        {
+          "name": "JavaScript"
+        },
+        {
+          "name": "React"
+        },
+        {
+          "name": "CSS"
+        },
+        {
+          "name": "Figma"
+        }
+      ],
+      "experience": [
+        {
+          "title": "Student developer",
+          "description": "Built React web apps for a student association"
+        }
+      ],
+      "languages": [
+        {
+          "language": "English",
+          "level": "C1"
+        }
+      ],
+      "preferences": {
+        "target_roles": [
+          "frontend developer"
+        ],
+        "interests": [
+          "web development",
+          "UI"
+        ],
+        "locations": [
+          "Zagreb"
+        ],
+        "remote_mode": "hybrid",
+        "job_types": [
+          "internship",
+          "junior"
+        ]
+      }
+    },
+    "normalized": {
+      "skills": [
+        {
+          "source_term": "JavaScript",
+          "normalized_label": "JavaScript",
+          "esco_concept": {
+            "uri": "http://data.europa.eu/esco/skill/...",
+            "preferred_label": "JavaScript"
+          },
+          "mapping": {
+            "status": "EXACT",
+            "method": "alias_lookup",
+            "confidence": 1.0
+          },
+          "modality": "unspecified",
+          "evidence": null
+        },
+        {
+          "source_term": "React",
+          "normalized_label": "React",
+          "esco_concept": {
+            "uri": "http://data.europa.eu/esco/skill/...",
+            "preferred_label": "web programming"
+          },
+          "mapping": {
+            "status": "RELATED",
+            "method": "embedding_similarity",
+            "confidence": 0.78
+          },
+          "modality": "unspecified",
+          "evidence": null
+        },
+        {
+          "source_term": "CSS",
+          "normalized_label": "CSS",
+          "esco_concept": {
+            "uri": "http://data.europa.eu/esco/skill/...",
+            "preferred_label": "CSS"
+          },
+          "mapping": {
+            "status": "EXACT",
+            "method": "alias_lookup",
+            "confidence": 1.0
+          },
+          "modality": "unspecified",
+          "evidence": null
+        },
+        {
+          "source_term": "Figma",
+          "normalized_label": "Figma",
+          "esco_concept": {
+            "uri": "http://data.europa.eu/esco/skill/...",
+            "preferred_label": "use interface design software"
+          },
+          "mapping": {
+            "status": "RELATED",
+            "method": "embedding_similarity",
+            "confidence": 0.7
+          },
+          "modality": "unspecified",
+          "evidence": null
+        }
+      ],
+      "occupations": [
+        {
+          "source_term": "frontend developer",
+          "normalized_label": "frontend developer",
+          "esco_concept": {
+            "uri": "http://data.europa.eu/esco/occupation/...",
+            "preferred_label": "web developer"
+          },
+          "mapping": {
+            "status": "RELATED",
+            "method": "embedding_similarity",
+            "confidence": 0.8
+          }
+        }
+      ]
+    }
+  }
+]
