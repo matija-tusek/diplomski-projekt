@@ -118,12 +118,12 @@ class StudentStatus(BaseModel):
 
 
 class CandidateEducation(BaseModel):
-    level: EducationLevel
+    level: Optional[EducationLevel] = None  # None = not stated in the CV
     field: Optional[str] = None
     institution: Optional[str] = None
-    status: EducationStatus
+    status: Optional[EducationStatus] = None
     expected_graduation: Optional[str] = Field(
-        default=None, pattern=r"^\d{4}-(0[1-9]|1[0-2])$", description="YYYY-MM"
+        default=None, pattern=r"^\d{4}(-(0[1-9]|1[0-2]))?$", description="YYYY or YYYY-MM"
     )
     evidence: Evidence
 
@@ -143,7 +143,7 @@ class CandidateExperience(BaseModel):
 
 class CandidateLanguage(BaseModel):
     language: str
-    level: LanguageLevel
+    level: Optional[LanguageLevel] = None  # None = level not stated
     evidence: Evidence
 
 
@@ -194,7 +194,7 @@ class JobSkill(BaseModel):
 
 
 class JobEducation(BaseModel):
-    level: EducationLevel
+    level: Optional[EducationLevel] = None  # None = level not stated in the ad
     field: Optional[str] = None
     modality: Modality
     evidence: Evidence
@@ -214,7 +214,7 @@ class JobExperience(BaseModel):
 
 class JobLanguage(BaseModel):
     language: str
-    level: LanguageLevel
+    level: Optional[LanguageLevel] = None  # None = level not stated (e.g. "German is a plus")
     modality: Modality
     evidence: Evidence
 
@@ -329,6 +329,9 @@ class RetrievalResult(BaseModel):
 # Matching (Group 4)
 # --------------------------------------------------------------------------- #
 class MatchFeatures(BaseModel):
+    """None = unknown: the CV or the ad does not state what the feature needs.
+    Unknown is not a mismatch, so it is never replaced by 0."""
+
     semantic_similarity: float
     required_skill_coverage: float = Field(ge=0.0, le=1.0)
     preferred_skill_coverage: float = Field(ge=0.0, le=1.0)
@@ -336,13 +339,13 @@ class MatchFeatures(BaseModel):
     number_missing_preferred_skills: int = Field(ge=0)
     missing_required_skills: list[str] = Field(default_factory=list)
     missing_preferred_skills: list[str] = Field(default_factory=list)
-    esco_occupation_similarity: float
-    education_match: float
-    seniority_match: float
-    experience_gap: float
-    language_match: float
-    location_match: float
-    remote_preference_match: float
+    esco_occupation_similarity: Optional[float] = Field(ge=0.0, le=1.0)
+    education_match: Optional[float] = Field(ge=0.0, le=1.0)
+    seniority_match: Optional[float] = Field(ge=0.0, le=1.0)
+    experience_gap: Optional[float] = Field(ge=0.0)  # years short of the requirement
+    language_match: Optional[float] = Field(ge=0.0, le=1.0)
+    location_match: Optional[float] = Field(ge=0.0, le=1.0)
+    remote_preference_match: Optional[float] = Field(ge=0.0, le=1.0)
 
 
 class ConstraintCheck(BaseModel):
